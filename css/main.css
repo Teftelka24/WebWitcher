@@ -6,6 +6,11 @@ svg {
 	width: 100%;
 }
 
+.bar {
+	font-family: Comic Sans MS;
+	text-align: center;
+}
+
 .map {
 	position: relative;
 	width: 100%;
@@ -34,6 +39,10 @@ body > main {
     display: flex;
 }
 
+.tit {
+	font-size: 32px;
+}
+
 #sidebar {
     margin-right: 1rem;
     width: 50px;
@@ -47,11 +56,23 @@ body > main {
     width: 500px;
     transition: .25s ease-in;
     padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .region {
 	stroke: black;
 	fill: #FFE2B7;
+	z-index: -9;
+	position: absolute;
+	transform: scale(1.0);
+}
+
+.town {
+	z-index: 9;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .region:hover {
