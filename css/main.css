@@ -1,7 +1,7 @@
 svg {
 	position: absolute;
-	top: auto;
-	left: auto;
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 100%;
 }
@@ -9,21 +9,26 @@ svg {
 .bar {
 	font-family: Comic Sans MS;
 	text-align: center;
+	z-index: 9;
 }
 
 .map {
-	position: relative;
-	width: 100%;
+	position: fixed;
+	display: flex;
+	width: 100vw;
 	height: 100%;
+	overflow: hidden;
 }
 
 body {
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .sidebar {
 	position: absolute;
+	z-index: 9;
 }
 
 body > footer {
@@ -50,14 +55,16 @@ body > main {
     transition: .25s ease-out;
     border-radius: 0rem .5rem .5rem 0;
     padding: 1rem;
+    z-index: 9;
 }
 
 #sidebar.show {
-    width: 500px;
+    width: 350px;
     transition: .25s ease-in;
     padding: 1rem;
     overflow-y: auto;
     overflow-x: hidden;
+    z-index: 9;
 }
 
 .region {
@@ -81,24 +88,131 @@ body > main {
 	cursor: pointer;
 }
 
-.city {
-    stroke: black;
-    stroke-width: 2px;
-    fill: red;
+#Nazair {
+	fill: #e4d05c;
+}
+#Nilfgaard {
+	fill: #e4d05c;
+}
+#Toussaint {
+	fill: #e4d05c;
+}
+#Cintra-1 {
+	fill: #2c73c9;
+}
+#Cintra-2 {
+	fill: #2c73c9;
+}
+#Cintra-3 {
+	fill: #2c73c9;
+}
+#Cintra-4 {
+	fill: #2c73c9;
+}
+#Cintra-5 {
+	fill: #2c73c9;
+}
+#Temeria {
+	fill: #949c94;
+}
+#Angren {
+	fill: #949c94;
+}
+#Mahakam {
+	fill: #949c94;
+}
+#Sodden {
+	fill: #e44454;
+}
+#Brugge {
+	fill: #10d030;
+}
+#Brokilon {
+	fill: #049c3c;
+}
+#Verden-1 {
+	fill: #847c2c;
+}
+#Verden-2 {
+	fill: #847c2c;
+}
+#Verden-3 {
+	fill: #847c2c;
+}
+#Lyria-i-Rivia {
+	fill: #acb49c;
+}
+#Skellige-1 {
+	fill: #8b5483;
+}
+#Skellige-2 {
+	fill: #8b5483;
+}
+#Skellige-3 {
+	fill: #8b5483;
+}
+#Skellige-4 {
+	fill: #8b5483;
+}
+#Skellige-5 {
+	fill: #8b5483;
+}
+#Skellige-6 {
+	fill: #8b5483;
+}
+#Skellige-7 {
+	fill: #8b5483;
+}
+#Kerack {
+	fill: #5051B2;
+}
+#Cidaris {
+	fill: #DABF7A;
+}
+#Aedirn {
+	fill: #6a5038;
+}
+#Kaedwen {
+	fill: #7C63CE;
+}
+#Redania-1 {
+	fill: #b0683c;
+}
+#Redania-2 {
+	fill: #b0683c;
+}
+#Redania-3 {
+	fill: #b0683c;
+}
+#Novigrad {
+	fill: #5186a4;
+}
+#Caingorn {
+	fill: #ac2c3c;
+}
+#Creyden {
+	fill: #AA5372;
+}
+#Kovir-i-Poviss-1 {
+	fill: #6cbc94;
+}
+#Kovir-i-Poviss-2 {
+	fill: #6cbc94;
+}
+#Kovir-i-Poviss-3 {
+	fill: #6cbc94;
+}
+#Kovir-i-Poviss-4 {
+	fill: #6cbc94;
+}
+#Kovir-i-Poviss-5 {
+	fill: #6cbc94;
+}
+#Kovir-i-Poviss-6 {
+	fill: #6cbc94;
+}
+#Malleore {
+	fill: #BBC606;
 }
 
-.descr {
-	width: 200px;
-	height: 300px;
-	position: absolute;
-	box-sizing: border-box;
-	box-shadow: 0 0 32px 10px; #ccc;
-	left: 500px;
-	top: 10px;
-	bottom: calc(50% - 200px);
-}
 
-.on-hover:hover+ .description-hidden {
-	opacity: 1;
-	transition: 1s;
-}
