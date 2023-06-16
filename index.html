@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 	<head>
 		<title> Карта </title>
+		<meta lang="ru-RU">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="icon" type="icon", href="media/icon.ico">
 		<script src="js/jquery.js"></script>
@@ -12,7 +13,11 @@
 		<header></header>
 		<main>
 			<div id="sidebar" class="bar">
-                <a id="title" class="tit"></a>
+				<div id="button-container" class="sidebar-content" style="display: none;">
+                	<a id="title" class="tit"></a>
+                	<button id="change-img" class="sidebar-button">Показать флаг</button>
+                	<button id="restore-img" class="sidebar-button" style="display: none;">Показать герб</button>
+                </div>
                 <a id="picture"></a>
                 <a id="content"></a>
             </div>

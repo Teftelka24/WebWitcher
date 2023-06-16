@@ -4,12 +4,44 @@ svg {
 	left: 0;
 	height: 100%;
 	width: 100%;
+	display: flex;
 }
 
 .bar {
 	font-family: Comic Sans MS;
-	text-align: center;
+/*	text-align: center;*/
 	z-index: 9;
+	position: relative;
+}
+
+.sidebar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.sidebar-button {
+    font-family: Comic Sans MS;
+    background-color: #5f9ea0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.sidebar-button:hover {
+    background-color: #4682b4;
+}
+
+#title {
+    float: center;
+    margin-bottom: 1rem;
+}
+
+#button-container {
+    margin-left: 5rem;
 }
 
 .map {
